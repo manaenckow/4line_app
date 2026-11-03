@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <script src="https://sad.adsgram.ai/js/sad.min.js"></script>
-
     <meta charset="UTF-8"/>
     <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
     />
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+        // Не грузим Telegram SDK при запуске из VK (VK передаёт vk_* параметры в query string)
+        if (!/[?&](vk_app_id|vk_user_id|sign)=/.test(window.location.search)) {
+            document.write('<script src="https://telegram.org/js/telegram-web-app.js"><\/script>');
+        }
+    </script>
     <title>4 в ряд</title>
-  <script type="module" crossorigin src="/assets/index-CVQeXAAA.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-CVb3XO8P.css">
+  <script type="module" crossorigin src="/assets/index-BbIqOwhf.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Cc4o-iSf.css">
 </head>
 <body>
 
-<div id="root"></div>
+<div id="root"></div>
 </body>
 </html>
